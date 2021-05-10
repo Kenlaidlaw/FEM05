@@ -21,6 +21,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .attribution a {
@@ -97,12 +98,6 @@ body {
   font-size: 0.8rem;
 }
 
-.left__statcards--no {
-  color: white;
-  padding: 0 2.5rem 0.5rem 0;
-  font-family: "Lexend Deca", sans-serif;
-}
-
 .right {
   position: relative;
   background: url(../images/image-header-desktop.jpg) no-repeat center center/cover;
@@ -119,5 +114,104 @@ body {
   height: 100%;
   background: #830db9;
   opacity: 0.4;
+}
+
+@media (max-width: 920px) {
+  .left {
+    width: 35vw;
+    padding: 1rem;
+  }
+  .left__heading {
+    font-size: 1.5rem;
+  }
+  .left__para {
+    padding: 1rem 1rem;
+  }
+  .left__card-container {
+    padding: 2.9rem 1rem 0 1rem;
+    font-size: 0.7rem;
+  }
+  .left__statcards--no {
+    padding: 0 3rem 0.5rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 5vh auto 5vh;
+    height: 100%;
+  }
+  .left {
+    width: 70vw;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    text-align: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .left__heading {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .left__para {
+    padding: 0.5rem 1rem;
+    line-height: 1.25rem;
+  }
+  .left__card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .left__statcards h2 {
+    padding-right: 0px;
+  }
+  .right {
+    position: relative;
+    background: url(../images/image-header-mobile.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 70vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .right::after {
+    content: '';
+    position: absolute;
+    width: 70vw;
+    height: 100%;
+    background: #830db9;
+    opacity: 0.4;
+  }
 }
 /*# sourceMappingURL=main.css.map */
